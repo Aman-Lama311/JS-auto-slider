@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body class="bg-gray-700">
+    <div class="container flex justify-center items-center w-full h-[80vh]">
+      <div class="frame h-[500px] w-[1000px] overflow-hidden">
+        <div class="slider flex duration-1000">
+          <img h-[100%] w-[100%] object-cover src="./nat1.jpg" alt="" />
+          <img h-[100%] w-[100%] object-cover src="./nat2.jpg" alt="" />
+          <img h-[100%] w-[100%] object-cover src="./nat3.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="btn flex justify-center gap-4">
+      <button class="pause px-4 py-2 text-white text-xl font-semibold bg-purple-600 hover:bg-purple-900  rounded-md"><i class="fa-regular fa-circle-pause"></i></button>
+      <button
+        class="left px-4 py-2 text-white text-xl font-semibold bg-purple-600 hover:bg-purple-900 rounded-md"
+      >
+        Left
+      </button>
+      <div class="dots flex justify-center items-center gap-5">
+        <div
+          class="cursor-pointer dot h-[20px] w-[20px] border-2 border-white rounded-full"
+        ></div>
+        <div
+          class="cursor-pointer dot h-[20px] w-[20px] border-2 border-white rounded-full"
+        ></div>
+        <div
+          class="cursor-pointer dot h-[20px] w-[20px] border-2 border-white rounded-full"
+        ></div>
+      </div>
+      <button
+        class="right px-4 py-2 text-white text-xl font-semibold bg-purple-600 hover:bg-purple-900 rounded-md"
+      >
+        Right
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
